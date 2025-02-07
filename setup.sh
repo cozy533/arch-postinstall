@@ -28,6 +28,7 @@ PROGRAMS=(
 	"foliate"
 	"gdm"
 	"gimp"
+	"gnome-boxes"
 	"gnome-control-center"
 	"gnome-characters"
 	"gnome-disk-utility"
