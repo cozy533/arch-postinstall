@@ -62,6 +62,7 @@ PROGRAMS=(
 	"thunderbird-dark-reader"
 	"ttf-twemoji"
 	"vesktop"
+	"vscodium"
 	"vulkan-radeon"
 	"wine-mono"
 	"wireguard-tools"
