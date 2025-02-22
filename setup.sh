@@ -15,8 +15,8 @@ function configureChaoticAUR {
 	echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 }
 
-# List of official and Chaotic-AUR packages
-PROGRAMS=(
+# List of official and chaotic repo packages
+PACKAGES=(
 	"adw-gtk-theme"
 	"bottles"
 	"blackbox-terminal"
@@ -40,7 +40,6 @@ PROGRAMS=(
 	"htop"
 	"i2c-tools"
 	"jamesdsp"
-	"keepassxc"
 	"lib32-vulkan-radeon"
 	"losslesscut-bin"
 	"loupe"
@@ -55,6 +54,7 @@ PROGRAMS=(
 	"openrgb"
 	"paru"
 	"rsync"
+	"secrets"
 	"streamlink"
 	"systemd-resolvconf"
 	"syncthing"
@@ -68,7 +68,7 @@ PROGRAMS=(
 	"wireguard-tools"
 )
 
-# List of "regular AUR" packages for paru
+# List of AUR packages
 AUR=(
 	"gapless"
 	"librewolf-bin"
@@ -86,7 +86,7 @@ configureChaoticAUR
 pacman -Sy --noconfirm
 
 # Install packages from official repos + chaotic AUR repo
-pacman -S --needed --noconfirm "${PROGRAMS[@]}"
+pacman -S --needed --noconfirm "${PACKAGES[@]}"
 
 # Install steam package after pre-specified radeon drivers are installed
 pacman -S --needed --noconfirm steam
@@ -99,4 +99,4 @@ systemctl enable gdm
 systemctl enable firewalld
 systemctl enable systemd-resolved
 
-echo -e "\033[0;33mEverything completed successfully." && echo -e "\033[0;0m"
+echo -e "\033[0;33mEverything completed successfully.\033[0;0m"
