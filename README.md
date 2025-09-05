@@ -1,7 +1,12 @@
 ## Arch Linux Post-Installation Script
 
-Script to install desired programs on a fresh Arch Linux system.
-Leverages the AUR and the Chaotic AUR.
+A bash script to simplify setting up a minimal Arch Linux installation, with GNOME as the desktop environment.
+Installs desired packages from the official repositories, the AUR, and the Chaotic AUR. Will prompt for sudo password when installing packages through paru.
+
+## Features
+- Installs base packages, drivers, and utilities
+- Configures paru (AUR helper)
+- Sets up system services (gdm, firewalld, systemd-resolved)
 
 ### Usage
 
