@@ -4,7 +4,7 @@ A bash script to simplify setting up a minimal Arch Linux installation, with GNO
 Installs desired packages from the official repositories, the AUR, and the Chaotic AUR. Will prompt for sudo password when installing packages through paru.
 
 ## Features
-- Installs base packages, drivers, and utilities
+- Installs AMD open-source GPU drivers and various utilities
 - Configures paru (AUR helper)
 - Sets up system services (gdm, firewalld, systemd-resolved)
 
