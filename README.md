@@ -15,3 +15,5 @@ Installs desired packages from the official repositories, the AUR, and the Chaot
 
 2. Run the script as root <br>
 `cd arch-postinstall && sudo ./setup.sh`
+
+⚠️ Note: These scripts are tailored to my personal Linux setup. Please modify the desired packages if you intend to use it.
