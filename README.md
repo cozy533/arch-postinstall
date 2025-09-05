@@ -10,10 +10,14 @@ Installs desired packages from the official repositories, the AUR, and the Chaot
 
 ### Usage
 
-1. Clone the repositry <br>
-`git clone https://github.com/cozy533/arch-postinstall`
+1. Clone the repositry:
+```
+git clone https://github.com/cozy533/arch-postinstall
+```
 
-2. Run the script as root <br>
-`cd arch-postinstall && sudo ./setup.sh`
+3. Run the script as root:
+```
+cd arch-postinstall && sudo ./setup.sh
+```
 
-⚠️ Note: These scripts are tailored to my personal Linux setup. Please modify the desired packages if you intend to use it.
+⚠️ Note: Designed for personal use. Please modify the desired packages if you intend to use this script.
